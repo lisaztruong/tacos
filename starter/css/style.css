@@ -317,9 +317,14 @@ header[role="title-page"] h2,header[role="title-page"] h2{ color:#000; font-size
 
 .section-two{ background-color:#f7f7f8; margin-top:80px; overflow:hidden}
 
+/*original*/
 /*.section-two section figure{background-position:50% 0; background-size:cover; background-repeat:no-repeat; background-attachment:fixed; min-height:593px}*/
 
-.section-two section figure{background-position: center; background-size:auto; background-repeat:no-repeat;  min-height:200px}
+.section-two section figure{background-position:center center; background-size:cover; background-repeat:no-repeat; background-attachment:fixed; min-height:300px}
+
+/*orig size vid in checkerboard*/
+/*.section-two section figure{background-position: center; background-size:auto; background-repeat:no-repeat;  min-height:200px}*/
+
 /*.section-two section figure-aa{background-position: right; background-size:auto; background-repeat:no-repeat;  min-height:200px}*/
 
 .section-two section:hover img{-webkit-transform:scale(1.3);transform:scale(1.3);}
@@ -358,6 +363,8 @@ header[role="title-page"] h2,header[role="title-page"] h2{ color:#000; font-size
 
 .slider-pan section article{ font-size:21px; line-height:36px; font-weight:400; padding-top:38px}
 
+.slider-pan section img{ text-align: center; display: block; margin: auto}
+
 .slider-pan section article:before{content:"\f10d";font-family:'FontAwesome'; color:#5e5e64}
 
 .slider-pan section article:after{content:"\f10e";font-family:'FontAwesome';color:#5e5e64}
@@ -367,6 +374,8 @@ header[role="title-page"] h2,header[role="title-page"] h2{ color:#000; font-size
 .slider-pan section header h5{ text-transform:uppercase; font-weight:700; color:#000; padding-bottom:8px}
 
 .slider-pan section header{ padding-top:38px;}
+
+.slider-pan section lisa{ text-align: center;}
 
 .slider-pan .owl-buttons{ display:none}
 
