@@ -808,6 +808,7 @@
               <!-- <input type="hidden" name="_next" value="https://www.linkedin.com/in/lisaztruong/"/> -->
 
 
+              <input type="text" name="_gotcha" style="display:none" />
 
               <!-- <button type="submit" name="" value="Submit"> -->
               <button type="submit">Subscribe<i class="fa fa-envelope" aria-hidden="true"></i></button>
@@ -879,6 +880,7 @@
               <textarea name="comments" id="comments" cols="" rows="" placeholder="Questions or comments in detail"></textarea>
 
               <div class="clearfix"></div>
+              <input type="text" name="_gotcha" style="display:none" />
 
               <button type="submit" value="Send mail">
               <!-- <button type="submit" value="Send mail" input name="">Send</button> -->
@@ -964,7 +966,21 @@
     <!-- main -->
 
 
+<script>
+var message = "";
 
+$("#sendMessage").on("click", function() {
+    message = $("#contactform").serialize();
+    $.ajax({
+        url: "//formspree.io/lisaztruong@gmail.com",
+        method: "POST",
+        data: {message: message},
+        dataType: "json"
+    });
+    alert('Thanks for the email, we\'ll be in touch promptly.');
+    return false;
+});
+</script>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
