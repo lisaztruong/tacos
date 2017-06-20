@@ -248,7 +248,8 @@ header[role="header"].header-top section{position:absolute; left:0; right:0; top
 
 header[role="header"].header-top section h2,header[role="header"].header-top section p{ color:#FFF}
 
-header[role="header"].header-top section h2{ font-size:48px; line-height:50px; font-weight:400}
+/*change size of font for lux science*/
+header[role="header"].header-top section h2{ font-size:88px; line-height:50px; font-weight:400}
 
 header[role="header"].header-top section p{ font-size:19px; line-height:20px; font-weight:500; padding-top:15px}
 
