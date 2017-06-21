@@ -834,7 +834,7 @@
                       data: {message: message},
                       dataType: "json"
                   });
-                  alert('Thanks for the email, we\'ll be in touch promptly.');
+                  alert('Thanks for subscribing, we\'ll be in touch promptly.');
                   return false;
               });
               </script>
@@ -903,13 +903,9 @@
               <div class="clearfix"></div>
 
               <input type="text" name="_gotcha" style="display:none" />
-              <button id="sendMessageEmail" type="submit" input name="" value="Send mail">Send</button>
-
-                <!-- <button type="submit" name="" value="Submit"> -->
-
+              <!-- <button id="sendMessageEmail" type="submit" input name="" value="Send mail">Send</button> -->
+              <input name="" type="submit" value="Send mail" id="sendMessageEmail">
               <input type="hidden" name="_next" value="https://lisaztruong.github.io/tacos/starter/" />
-
-              <!-- <button type="submit" value="Send mail" input name="">Send</button> -->
 
               <div id="simple-msg"></div>
 
@@ -919,7 +915,7 @@
             var message = "";
 
             $("#sendMessageEmail").on("click", function() {
-                message = $("#contactform").serialize();
+                message = $("#cform").serialize();
                 $.ajax({
 
                     url: "//formspree.io/lisaztruong@gmail.com",
@@ -927,7 +923,7 @@
                     data: {message: message},
                     dataType: "json"
                 });
-                alert('Thanks for the email, we\'ll be in touch promptly.');
+                alert('Thanks for the email! We\'ll be in touch promptly.');
                 return false;
             });
             </script>
