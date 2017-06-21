@@ -901,14 +901,36 @@
               <textarea name="comments" id="comments" cols="" rows="" placeholder="Questions or comments in detail"></textarea>
 
               <div class="clearfix"></div>
-              <input type="text" name="_gotcha" style="display:none" />
 
-              <button type="submit" value="Send mail">
+              <input type="text" name="_gotcha" style="display:none" />
+              <button id="sendMessageEmail" type="submit" name="" value="Send mail">Submit</button>
+
+                <!-- <button type="submit" name="" value="Submit"> -->
+
+              <input type="hidden" name="_next" value="https://lisaztruong.github.io/tacos/starter/" />
+
               <!-- <button type="submit" value="Send mail" input name="">Send</button> -->
 
               <div id="simple-msg"></div>
 
             </form>
+
+            <script>
+            var message = "";
+
+            $("#sendMessageEmail").on("click", function() {
+                message = $("#contactform").serialize();
+                $.ajax({
+
+                    url: "//formspree.io/lisaztruong@gmail.com",
+                    method: "POST",
+                    data: {message: message},
+                    dataType: "json"
+                });
+                alert('Thanks for the email, we\'ll be in touch promptly.');
+                return false;
+            });
+            </script>
 
           </div>
 
