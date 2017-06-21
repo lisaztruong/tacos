@@ -250,8 +250,8 @@ header[role="header"].header-top section h2,header[role="header"].header-top sec
 
 /*change size of font for lux science*/
 header[role="header"].header-top section h2{ font-size:88px; line-height:50px; font-weight:400}
-
-header[role="header"].header-top section p{ font-size:19px; line-height:20px; font-weight:500; padding-top:15px}
+/*aubrie font family serif*/
+header[role="header"].header-top section p{ font-size:19px; line-height:20px; font-weight:500; padding-top:15px; font-family: 'Droid Serif', serif}
 
 header[role="header"].header-top section a.button-header{ display: inline-block; text-align:center; margin:0 auto; line-height:63px; font-size:16px; font-weight:400; padding:0 53px; color:#FFF; background-color:#2680FF; border-radius:4px; text-transform:uppercase}
 
@@ -284,9 +284,9 @@ header[role="header"].header-top section a.video-button:hover,.video-pan header 
 
 header[role="title-page"] h4,header[role="title-page"] h4,header[role="title-page"] h4{ font-size:19px; line-height:20px; color:#71717c; text-transform:uppercase; font-weight:600}
 
-header[role="title-page"] h4:after,header[role="title-page"] h4:after,header[role="title-page"] h4:after{ content:""; display:block; margin:0 auto; width:79px; height:2px; background-color:#2680FF; margin:17px auto; margin-bottom:0}
-
-header[role="title-page"] h2,header[role="title-page"] h2{ color:#000; font-size:31px; line-height:36px; font-weight:600; padding-top:2px}
+header[role="title-page"] h4:after,header[role="title-page"] h4:after,header[role="title-page"] h4:after{ content:""; display:block; margin:0 auto; width:79px; height:2px; background-color:#2680FF; margin:17px auto; margin-bottom:0;}
+/*aubrie font family serif*/
+header[role="title-page"] h2,header[role="title-page"] h2{ color:#000; font-size:31px; line-height:36px; font-weight:600; padding-top:2px; font-family: 'Droid Serif', serif}
 
 /*== Section One ==*/
 
@@ -568,4 +568,8 @@ border-bottom-right-radius: 3px;}
 	vertical-align: middle;
 	/*display: block;*/
 	padding-left: 10%
+}
+
+.serif{
+	font-family: 'Droid Serif', serif;
 }
