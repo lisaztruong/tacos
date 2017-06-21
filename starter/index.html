@@ -803,8 +803,9 @@
           <div class="ntify_form">
 
             <!-- <form method="post" action="php/subscribe.php" name="subscribeform" id="subscribeform"> -->
-            <form method="post" action="https://formspree.io/lisaztruong@gmail.com" name="subscribeform" id="subscribeform">
+            <!-- <form method="post" action="https://formspree.io/lisaztruong@gmail.com" name="subscribeform" id="subscribeform"> -->
 
+            <form method="post" name="subscribeform" id="subscribeform">
 
               <input name="email" type="email" id="subemail" placeholder="Email Address">
               <!-- <input type="hidden" name="_next" value="https://www.linkedin.com/in/lisaztruong/"/> -->
@@ -819,6 +820,24 @@
                 <!-- Subscribe <i class="fa fa-envelope" aria-hidden="true"></i></button> -->
 
               </form>
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+              <script>
+              var message = "";
+
+              $("#sendMessage").on("click", function() {
+                  message = $("#contactform").serialize();
+                  $.ajax({
+
+                      url: "//formspree.io/lisaztruong@gmail.com",
+                      method: "POST",
+                      data: {message: message},
+                      dataType: "json"
+                  });
+                  alert('Thanks for the email, we\'ll be in touch promptly.');
+                  return false;
+              });
+              </script>
 
               <!-- subscribe message -->
 
