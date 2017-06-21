@@ -826,7 +826,7 @@
               var message = "";
 
               $("#sendMessage").on("click", function() {
-                  message = $("#contactform").serialize();
+                  message = $("#subscribeform").serialize();
                   $.ajax({
 
                       url: "//formspree.io/lisaztruong@gmail.com",
@@ -903,7 +903,7 @@
               <div class="clearfix"></div>
 
               <input type="text" name="_gotcha" style="display:none" />
-              <button id="sendMessageEmail" type="submit" name="" value="Send mail">Submit</button>
+              <button id="sendMessageEmail" type="submit" input name="" value="Send mail">Send</button>
 
                 <!-- <button type="submit" name="" value="Submit"> -->
 
